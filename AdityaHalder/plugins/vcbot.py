@@ -79,7 +79,7 @@ async def play(_, message: Message):
     global que
     global useer
     await message.delete()
-    lel = await message.reply("**🔄 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 ...**")
+    lel = await message.reply("**𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 - @Legend_of_all_groups 🔄 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 ...**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -143,7 +143,7 @@ async def play(_, message: Message):
         await lel.edit("**🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 ...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("**✅ 𝐅𝐢𝐧𝐚𝐥𝐢𝐳𝐢𝐧𝐠 ...**")
+        await lel.edit("**𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 - @Legend_of_all_groups ✅ 𝐅𝐢𝐧𝐚𝐥𝐢𝐳𝐢𝐧𝐠 ...**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -176,7 +176,7 @@ async def play(_, message: Message):
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
-        await lel.edit("**💥 𝐊𝐚𝐚𝐥🤞𝐀𝐝𝐝𝐞𝐝 💿 𝐒𝐨𝐧𝐠❗️\n🔊 𝐀𝐭 💞 𝐏𝐨𝐬𝐢𝐭𝐢𝐨𝐧 » `{}` 🌷 ...**".format(position),
+        await lel.edit("**💥 𝐎𝐏 𝐇𝐀𝐂𝐊𝐄𝐑🤞𝐀𝐝𝐝𝐞𝐝 💿 𝐒𝐨𝐧𝐠❗️\n🔊 𝐀𝐭 💞 𝐏𝐨𝐬𝐢𝐭𝐢𝐨𝐧 » `{}` 🌷 ...**".format(position),
     )
     else:
         await clientbot.pytgcalls.join_group_call(
@@ -189,7 +189,7 @@ async def play(_, message: Message):
                 stream_type=StreamType().local_stream,
             )
 
-        await lel.edit("**💥 𝐊𝐚𝐚𝐥🤞𝐌𝐮𝐬𝐢𝐜 🎸 𝐍𝐨𝐰 💞\n🔊 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 😍 𝐎𝐏 🥀 ...**".format(),
+        await lel.edit("**💥 𝐎𝐏 𝐇𝐀𝐂𝐊𝐄𝐑🤞𝐌𝐮𝐬𝐢𝐜 🎸 𝐍𝐨𝐰 💞\n🔊 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 😍 @Legend_of_all_group 🥀 ...**".format(),
         )
 
     return await lel.delete()
@@ -219,7 +219,7 @@ async def resume(_, message: Message):
     for x in clientbot.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        noac = await message.reply_text("**💥 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 🔇 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 🌷 ...**")
+        noac = await message.reply_text("**💥  𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 - @Legend_of_all_groups 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 🔇 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 🌷 ...**")
         await noac.delete()
     else:
         await clientbot.pytgcalls.resume_stream(message.chat.id)
@@ -283,8 +283,8 @@ async def stop(_, message: Message):
 
 @Client.on_message(commandpro([".song", "sng", ".sng", ".msc", "msc"]) & SUDOERS)
 async def song(client, message):
-    cap = "**🥀 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 ː [𝐌𝐫᭄'𝐊𝐚𝐚𝐋-𝐱𝐃](https://t.me/iamkaal)**"
-    rkp = await message.reply("**🔄 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 ...**")
+    cap = "**🥀 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 ː [𝐎𝐏 𝐇𝐀𝐂𝐊𝐄𝐑](https://t.me/legend_of_all_groups)**"
+    rkp = await message.reply("**𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 - @Legend_of_all_groups 🔄 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 ...**")
 
     if len(message.command) < 2:
             return await rkp.edit(
